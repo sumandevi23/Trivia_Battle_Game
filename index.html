@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Battal Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Trivia Game</h1>
+    <div id="form">
+        <input type="text" id="player1" placeholder="Player 1 Name">
+        <input type="text" id="player2" placeholder="Player 2 Name">
+        <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <div id="section" style="display: none;">
+        <div id="container"></div>
+    </div>
+
+    <div id="selection2" style="display: none;">
+        <button onclick="selectDifficulty('easy')">Easy</button>
+        <button onclick="selectDifficulty('medium')">Medium</button>
+        <button onclick="selectDifficulty('hard')">Hard</button>
+    </div>
+
+    <div id="area" style="display: none;">
+        <h2 id="title"></h2>
+        <p id="question"></p>
+        <div class="input">
+            <input type="text" id="player1-answer" placeholder="Player 1 Answer">
+            <input type="text" id="player2-answer" placeholder="Player 2 Answer">
+        </div>
+        <div class="btn">
+            <button onclick="submitAnswers()">Submit Answers</button>
+            <button onclick="nextQuestion()">Next Question</button>
+        </div>
+        <div class="feedscore">
+            <p id="feedback"></p>
+            <p id="score"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
